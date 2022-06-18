@@ -118,10 +118,10 @@ function main() {
     aB1Setting = document.querySelector("#aB1Setting");
     imgB1Setting = document.querySelector("#imgB1Setting");
 
-    aB2 = document.querySelector("#aB2");
-    imgB2 = document.querySelector("#imgB2");
-    aB2Setting = document.querySelector("#aB2Setting");   
-    imgB2Setting = document.querySelector("#imgB2Setting");
+    // aB2 = document.querySelector("#aB2");
+    // imgB2 = document.querySelector("#imgB2");
+    // aB2Setting = document.querySelector("#aB2Setting");   
+    // imgB2Setting = document.querySelector("#imgB2Setting");
 
     aB3 = document.querySelector("#aB3");
     imgB3 = document.querySelector("#imgB3");
@@ -137,9 +137,9 @@ function main() {
     if (localStorage.getItem("aB1") != null) {
         aB1.href = aB1Setting.value = localStorage.getItem("aB1");
     }
-    if (localStorage.getItem("aB2") != null) {
-        aB2.href = aB2Setting.value = localStorage.getItem("aB2");
-    }
+    // if (localStorage.getItem("aB2") != null) {
+    //     aB2.href = aB2Setting.value = localStorage.getItem("aB2");
+    // }
     if (localStorage.getItem("aB3") != null) {
         aB3.href = aB3Setting.value = localStorage.getItem("aB3");
     }
@@ -149,9 +149,9 @@ function main() {
     if (localStorage.getItem("imgB1") != null) {
         imgB1.src = imgB1Setting.value = localStorage.getItem("imgB1");
     }
-    if (localStorage.getItem("imgB2") != null) {
-        imgB2.src = imgB2Setting.value = localStorage.getItem("imgB2");
-    }
+    // if (localStorage.getItem("imgB2") != null) {
+    //     imgB2.src = imgB2Setting.value = localStorage.getItem("imgB2");
+    // }
     if (localStorage.getItem("imgB3") != null) {
         imgB3.src = imgB3Setting.value = localStorage.getItem("imgB3");
     }
@@ -165,11 +165,11 @@ function main() {
         aB1.href = newValue;
         localStorage.setItem("aB1", newValue);        
     }
-    aB2Setting.oninput = function() {
-        newValue = aB2Setting.value;
-        aB2.href = newValue;
-        localStorage.setItem("aB2", newValue);        
-    }
+    // aB2Setting.oninput = function() {
+    //     newValue = aB2Setting.value;
+    //     aB2.href = newValue;
+    //     localStorage.setItem("aB2", newValue);        
+    // }
     aB3Setting.oninput = function() {
         newValue = aB3Setting.value;
         aB3.href = newValue;
@@ -185,11 +185,11 @@ function main() {
         imgB1.src = newValue;
         localStorage.setItem("imgB1", newValue);
     }
-    imgB2Setting.oninput = function() {
-        newValue = imgB2Setting.value;
-        imgB2.src = newValue;
-        localStorage.setItem("imgB2", newValue);
-    }
+    // imgB2Setting.oninput = function() {
+    //     newValue = imgB2Setting.value;
+    //     imgB2.src = newValue;
+    //     localStorage.setItem("imgB2", newValue);
+    // }
     imgB3Setting.oninput = function() {
         newValue = imgB3Setting.value;
         imgB3.src = newValue;
