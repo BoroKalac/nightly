@@ -2,10 +2,7 @@ function displayClock() {
     const clockContainer = document.querySelector("#clockContainer");
     let date = new Date();
     let hrs = date.getHours();
-    let min = date.getMinutes();
-    if (hrs > 12) {
-        hrs = hrs - 12
-    }  
+    let min = date.getMinutes();  
     if (hrs < 10) {
         hrs = "0" + hrs
     }
@@ -216,8 +213,8 @@ function main() {
         body.style.backgroundImage = "url(" + localStorage.getItem("generalBackground") + ")";
         generalBackgroundSetting.value = localStorage.getItem("generalBackground");
     } else {
-        body.style.backgroundImage = "url('assets/calvin.jpg')";
-        generalBackgroundSetting.value = "assets/calvin.jpg";
+        body.style.backgroundImage = "url('assets/city.jpg')";
+        generalBackgroundSetting.value = "assets/city.jpg";
     }
     if (localStorage.getItem("generalBlurIntensity") != null) {
         apexContainer.style.backdropFilter = "blur(" + localStorage.getItem("generalBlurIntensity") + "px)";
