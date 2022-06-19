@@ -118,10 +118,10 @@ function main() {
     aB1Setting = document.querySelector("#aB1Setting");
     imgB1Setting = document.querySelector("#imgB1Setting");
 
-    // aB2 = document.querySelector("#aB2");
-    // imgB2 = document.querySelector("#imgB2");
-    // aB2Setting = document.querySelector("#aB2Setting");   
-    // imgB2Setting = document.querySelector("#imgB2Setting");
+    aB2 = document.querySelector("#aB2");
+    imgB2 = document.querySelector("#imgB2");
+    aB2Setting = document.querySelector("#aB2Setting");   
+    imgB2Setting = document.querySelector("#imgB2Setting");
 
     aB3 = document.querySelector("#aB3");
     imgB3 = document.querySelector("#imgB3");
@@ -133,30 +133,41 @@ function main() {
     aB4Setting = document.querySelector("#aB4Setting");
     imgB4Setting = document.querySelector("#imgB4Setting");
 
+    aB6 = document.querySelector("#aB6");
+    imgB6 = document.querySelector("#imgB6");
+    aB6Setting = document.querySelector("#aB6Setting");
+    imgB6Setting = document.querySelector("#imgB6Setting");
+
     // load user prefs
     if (localStorage.getItem("aB1") != null) {
         aB1.href = aB1Setting.value = localStorage.getItem("aB1");
     }
-    // if (localStorage.getItem("aB2") != null) {
-    //     aB2.href = aB2Setting.value = localStorage.getItem("aB2");
-    // }
+    if (localStorage.getItem("aB2") != null) {
+        aB2.href = aB2Setting.value = localStorage.getItem("aB2");
+    }
     if (localStorage.getItem("aB3") != null) {
         aB3.href = aB3Setting.value = localStorage.getItem("aB3");
     }
     if (localStorage.getItem("aB4") != null) {
         aB4.href = aB4Setting.value = localStorage.getItem("aB4");
     }
+    if (localStorage.getItem("aB6") != null) {
+        aB6.href = aB6Setting.value = localStorage.getItem("aB6");
+    }
     if (localStorage.getItem("imgB1") != null) {
         imgB1.src = imgB1Setting.value = localStorage.getItem("imgB1");
     }
-    // if (localStorage.getItem("imgB2") != null) {
-    //     imgB2.src = imgB2Setting.value = localStorage.getItem("imgB2");
-    // }
+    if (localStorage.getItem("imgB2") != null) {
+        imgB2.src = imgB2Setting.value = localStorage.getItem("imgB2");
+    }
     if (localStorage.getItem("imgB3") != null) {
         imgB3.src = imgB3Setting.value = localStorage.getItem("imgB3");
     }
     if (localStorage.getItem("imgB4") != null) {
         imgB4.src = imgB4Setting.value = localStorage.getItem("imgB4");
+    }
+    if (localStorage.getItem("imgB6") != null) {
+        imgB6.src = imgB6Setting.value = localStorage.getItem("imgB6");
     }
 
     // make settings work
@@ -165,11 +176,11 @@ function main() {
         aB1.href = newValue;
         localStorage.setItem("aB1", newValue);        
     }
-    // aB2Setting.oninput = function() {
-    //     newValue = aB2Setting.value;
-    //     aB2.href = newValue;
-    //     localStorage.setItem("aB2", newValue);        
-    // }
+    aB2Setting.oninput = function() {
+        newValue = aB2Setting.value;
+        aB2.href = newValue;
+        localStorage.setItem("aB2", newValue);        
+    }
     aB3Setting.oninput = function() {
         newValue = aB3Setting.value;
         aB3.href = newValue;
@@ -180,16 +191,21 @@ function main() {
         aB4.href = newValue;
         localStorage.setItem("aB4", newValue);        
     }
+    aB6Setting.oninput = function() {
+        newValue = aB6Setting.value;
+        aB6.href = newValue;
+        localStorage.setItem("aB6", newValue);        
+    }
     imgB1Setting.oninput = function() {
         newValue = imgB1Setting.value;
         imgB1.src = newValue;
         localStorage.setItem("imgB1", newValue);
     }
-    // imgB2Setting.oninput = function() {
-    //     newValue = imgB2Setting.value;
-    //     imgB2.src = newValue;
-    //     localStorage.setItem("imgB2", newValue);
-    // }
+    imgB2Setting.oninput = function() {
+        newValue = imgB2Setting.value;
+        imgB2.src = newValue;
+        localStorage.setItem("imgB2", newValue);
+    }
     imgB3Setting.oninput = function() {
         newValue = imgB3Setting.value;
         imgB3.src = newValue;
@@ -199,6 +215,11 @@ function main() {
         newValue = imgB4Setting.value;
         imgB4.src = newValue;
         localStorage.setItem("imgB4", newValue);
+    }
+    imgB6Setting.oninput = function() {
+        newValue = imgB6Setting.value;
+        imgB6.src = newValue;
+        localStorage.setItem("imgB6", newValue);
     }
 
     // --- GENERAL --- //
