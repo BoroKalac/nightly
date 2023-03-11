@@ -24,6 +24,10 @@ body {
     text-align: center;
 }
 
+#headingContainer .sub-heading {
+    font-size: 12px;
+}
+
 #clockContainer {
     color: #fff;
     font-family: 'Fira Code';
